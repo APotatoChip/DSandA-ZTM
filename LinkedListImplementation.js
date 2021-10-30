@@ -75,7 +75,7 @@ class LinkedList {
     }
 
     remove(index) {
-        const lead = this.traverseToIndex(index - 1);
+        const leader = this.traverseToIndex(index - 1);
         const unwantedNode = leader.next;
         leader.next = unwantedNode.next;
         this.length--;
@@ -90,6 +90,24 @@ class LinkedList {
             counter++;
         }
         return currNode;
+    }
+
+    reverse() {
+        if (!this.head.next) {
+            return this.head;
+        }
+        let first = this.head;
+        this.tail = this.head;
+        let second = first.next;
+
+        while (second) {
+            const temp = second.next;
+            second.next = first;
+            first = second;
+            second = temp;
+        }
+        this.head.next = null;
+        this.head = first;
     }
 }
 
