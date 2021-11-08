@@ -120,4 +120,5 @@ myLinkedList.insert(2, 99);
 myLinkedList.insert(0, 13);
 myLinkedList.insert(110, 47);
 myLinkedList.remove(2);
+myLinkedList.reverse();
 console.log(myLinkedList.printList());
