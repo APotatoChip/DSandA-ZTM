@@ -1,0 +1,60 @@
+Elementary 
+--Bubble Sort
+--// Time Complexity - O(n^2), Space Complexity O(1)
+--// Iteration by couples like a popping bubble for the length of the set
+--Insertion Sort
+--// Good for small data sets and nearly sorted data
+--// Time complexity O(n^2)
+--// Space Complexity O(1)
+--// Mind alike
+--Selection Sort
+--// O(n^2)
+--// Searching for the next min
+
+Intermediate
+--Merge Sort
+--// Divide and Conquer --> Recursion
+--// Time Complexity - O(n log n) (best, average and worst case) - log n is like the height of the tree, Space Complexity - O(n)
+--// Tree alike
+--// Stable
+--Quick Sort
+--// Divide and Conquer
+--// Time complexity - O(n log n) (average and best) but worst O(n^2), Space complexity - O(log(n))
+--Heap Sort
+
+For numbers
+--Radix Sort
+--Count Sort
+
+//#1 - Sort 10 schools around your house by distance:
+Exact number of schools -> small data set; don't know distance -> not sorted but could be sorted or nealry sorted which makes it better; 
+=> insertion sort - easy to code, good for small data sets and has a space complexity of O(1)
+
+//#2 - eBay sorts listings by the current Bid amount:
+bid amount -> number within a certain range but is fixed; big data; 
+=> radix sort/counting sort
+
+//#3 - Sport scores on ESPN
+sport scores -> number or decimal; big data; probably not sorted; cant use radix or counting 
+=> quick sort 
+
+//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+need to store externally; sort date; we dont want worst case of quick sort
+=> merge sort
+
+//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+almost sorted -> insertion sort; big data; only add 2 new reviews; preordered list;
+=> insertion sort
+
+//#6 - Temperature Records for the past 50 years in Canada
+tempretures->numbers/decimals; big data-> radix/count sort if integer; in memory sorting to save some space;
+=> quick sort
+
+//#7 - Large user name database needs to be sorted. Data is very random.
+big data of string; random; merge sort - if enought memory; quick sort - of not worry for worst case and db is not that large and pick a good pivot;
+=> merge/quick sort
+
+//#8 - You want to teach sorting for the first time
+=> bubble sort, selection sort
+
+Implementation of sorting functions in JS, C# and Java

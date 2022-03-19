@@ -1,0 +1,28 @@
+1. If you know a solution is not far from the root of the tree
+BFS - because it starts searching closest node to the parent first
+
+2. If the tree is very deep and solutions are rare
+BFS - because DFS will take really long time because it need to traverse till every last node and will take time to repeat it for every node
+
+3. If the tree is very wide
+DFS - because BFS will need to much memory 
+
+4. If the solutions are frequent but located deep in the tree
+DFS - will be able to find solution quicker
+
+5. Determining whether a path exists between two nodes
+DFS
+
+6. Finding the shortest path
+BFS
+
+BFS Graph - P2P Apps, Recommendation Engines, Google Maps, FB friend requests and Instagram suggestions
+BFS = More memory, but determines the shortest path and looks for the closer nodes first.
+
+DFS Graph - how to solve a maze with programming
+DFS is really good at telling us does the path exists and uses less memory than BFS, but the deeper the graph the more
+space complexity it uses
+
+Shortest Path? Dijkstra and Bellman-Ford, because DFS doesnt take into consideration weight.
+Bellman-Ford can accomodate negative weights in contrast to Dijkstra.
+Bellman-Ford W.C. O(n^2) while Dijkstra is faster.
