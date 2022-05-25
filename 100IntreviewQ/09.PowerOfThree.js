@@ -15,4 +15,4 @@ var isPowerOfThree = function(n) {
 
 
 };
-isPowerOfThree(45);
+isPowerOfThree(5);
