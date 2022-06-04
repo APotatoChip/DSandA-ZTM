@@ -1,16 +1,19 @@
 var reverseString = function(s) {
-
-    var i = 0
-    var j = s.length - 1
+    // In place with O(1) extra memory
+    // Two Pointers approach
+    // Place one pointer at each end; increment left one; decrement right one; while left is less than right
+    // Swap items on each iteration
+    var leftPointer = 0
+    var rightPointer = s.length - 1
 
     while (i < j) {
         // swap
-        var temp = s[i]
-        s[i] = s[j]
-        s[j] = temp
+        var temp = s[leftPointer]
+        s[leftPointer] = s[rightPointer]
+        s[rightPointer] = temp
 
-        i++
-        j--
+        leftPointer++;
+        rightPointer--;
     }
     return s;
 };
