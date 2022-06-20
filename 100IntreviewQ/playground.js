@@ -3,12 +3,12 @@
 // remember a solution to a problem, so you can use it later on if the same problem appears
 // Good for operations that takes long time
 
-
-// Normal solution
-function addTo80(n) {
-    console.log("long operation");
-    return n + 80;
-}
+https: //www.w3resource.com/javascript-exercises/javascript-recursion-functions-exercises.php
+    // Normal solution
+    function addTo80(n) {
+        console.log("long operation");
+        return n + 80;
+    }
 
 addTo80(5);
 addTo80(5);
