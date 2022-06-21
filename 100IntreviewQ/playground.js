@@ -52,3 +52,21 @@ memoization(5);
 memoization(5);
 memoization(6);
 memoization(6);
+
+function splicePlay(arr) {
+    console.log(months);
+    // deletes the item from the original array and returns array with the deleted item
+    let month = months.splice(2, 1)[0];
+    console.log(months);
+    console.log(month);
+    // replaces 1 element at index 0 with month
+    console.log(months.splice(0, 1, month));
+    console.log(months);
+    // removes two elements
+    console.log(months.splice(0, 2));
+
+
+}
+
+const months = ['Jan', 'March', 'April', 'June'];
+splicePlay(months);
