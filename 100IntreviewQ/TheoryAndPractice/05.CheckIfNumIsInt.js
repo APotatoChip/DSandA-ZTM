@@ -10,3 +10,5 @@ function isInt(n) {
         console.log(`${n} is Decimal`);
     }
 }
+
+isInt(5.5)
