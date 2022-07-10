@@ -1,0 +1,17 @@
+{
+    "name": "theoryandpractice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "*",
+    "dependencies": {
+        "rxjs": "^7.5.5",
+        "typescript": "^4.7.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "type": "module"
+}
